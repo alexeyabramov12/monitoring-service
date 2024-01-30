@@ -4,56 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89c70726-7893-4cdb-9f59-3e18c00e6421" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/auth/AuthenticateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/auth/RegistrationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/auth/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/auth/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/feedback/FeedbackDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/BaseReadingDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/ColdWaterReadingDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/HeatingReadingDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/HotWaterReadingDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/auth/AuthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/feedback/FeedbackException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/reading/ReadingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/in/InputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/in/auth/AuthInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/in/feedback/FeedbackInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/in/reading/ReadingInputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapper/auth/AuthMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapper/feedback/FeedbackMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapper/reading/ReadingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/auth/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/auth/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/feedback/Feedback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/reading/BaseReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/reading/ColdWaterReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/reading/HeatingReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/reading/HotWaterReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/out/OutputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/out/auth/AuthOutputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/out/feedback/FeedbackOutputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/out/reading/ReadingOutputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/auth/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/auth/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/auth/manager/AuthManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/feedback/FeedbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/feedback/FeedbackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/feedback/manager/FeedbackManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/ColdWaterReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/HeatingReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/HotWaterReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/ReadingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/manager/ReadingManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ValidationMonth.java" afterDir="false" />
+    <list default="true" id="89c70726-7893-4cdb-9f59-3e18c00e6421" name="Changes" comment="init project">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/auth/AuthServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/feedback/FeedbackServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/reading/ColdWaterReadingServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/reading/HeatingReadingServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/reading/HotWaterReadingServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/auth/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/auth/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/feedback/FeedbackDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/feedback/FeedbackDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/ColdWaterReadingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/ColdWaterReadingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/HeatingReadingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/HeatingReadingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/HotWaterReadingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/reading/HotWaterReadingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/auth/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/auth/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/feedback/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/feedback/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/feedback/FeedbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/feedback/FeedbackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/reading/ReadingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/ReadingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/reading/manager/ReadingManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/reading/manager/ReadingManagerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,29 +67,109 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+  <component name="RunManager" selected="JUnit.All in Monitoring-Service">
+    <configuration name="All in Monitoring-Service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedbackServiceImplTest.ifNoAdding_getAllFeedbacksByMonthByDate_thenException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monitoring-Service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.service.feedback.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.feedback" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.feedback.FeedbackServiceImplTest" />
+      <option name="METHOD_NAME" value="ifNoAdding_getAllFeedbacksByMonthByDate_thenException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedbackServiceImplTest.ifOneDto_getAllFeedbacksByMonthByDate_thenDataByMonth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.feedback.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.feedback" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.feedback.FeedbackServiceImplTest" />
+      <option name="METHOD_NAME" value="ifOneDto_getAllFeedbacksByMonthByDate_thenDataByMonth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedbackServiceImplTest.ifTwoDtoWithDifferentMonth_getAllFeedbacksByMonthByDate_thenDataByMonth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.feedback.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.feedback" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.feedback.FeedbackServiceImplTest" />
+      <option name="METHOD_NAME" value="ifTwoDtoWithDifferentMonth_getAllFeedbacksByMonthByDate_thenDataByMonth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedbackServiceImplTest.ifTwoDto_getAllFeedbacksByMonthByDate_thenDataByMonth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.feedback.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.feedback" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.feedback.FeedbackServiceImplTest" />
+      <option name="METHOD_NAME" value="ifTwoDto_getAllFeedbacksByMonthByDate_thenDataByMonth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeatingReadingServiceTest.ifOneDto_AddData_ThenAddingData" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.reading.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service.reading" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.reading.HeatingReadingServiceTest" />
+      <option name="METHOD_NAME" value="ifOneDto_AddData_ThenAddingData" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in Monitoring-Service" />
+        <item itemvalue="JUnit.FeedbackServiceImplTest.ifNoAdding_getAllFeedbacksByMonthByDate_thenException" />
+        <item itemvalue="JUnit.FeedbackServiceImplTest.ifTwoDtoWithDifferentMonth_getAllFeedbacksByMonthByDate_thenDataByMonth" />
+        <item itemvalue="JUnit.FeedbackServiceImplTest.ifTwoDto_getAllFeedbacksByMonthByDate_thenDataByMonth" />
+        <item itemvalue="JUnit.FeedbackServiceImplTest.ifOneDto_getAllFeedbacksByMonthByDate_thenDataByMonth" />
       </list>
     </recent_temporary>
   </component>
@@ -136,8 +184,16 @@
       <workItem from="1706262002485" duration="1269000" />
       <workItem from="1706269153460" duration="15731000" />
       <workItem from="1706339614659" duration="27626000" />
-      <workItem from="1706441720981" duration="51443000" />
+      <workItem from="1706441720981" duration="69174000" />
     </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1706614136376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706614136376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,5 +209,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
 </project>

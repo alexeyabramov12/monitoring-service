@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-public class FeedbackServiceImpl implements FeedbackService{
+public class FeedbackServiceImpl implements FeedbackService {
 
 
     private final List<Feedback> data;
@@ -30,6 +30,12 @@ public class FeedbackServiceImpl implements FeedbackService{
 
     @Override
     public Map<LocalDate, List<FeedbackDto>> getAllFeedbacksByDate() {
+        String errorMessage = "Жалоб и предложений не найдено";
+
+        if (data.isEmpty()) {
+            throw new FeedbackException(errorMessage);
+        }
+
         return new TreeMap<>(data.stream()
                 .map(mapper::feedbackDto)
                 .collect(Collectors.groupingBy(FeedbackDto::getDate)));
@@ -39,11 +45,13 @@ public class FeedbackServiceImpl implements FeedbackService{
     public Map<LocalDate, List<FeedbackDto>> getAllFeedbacksByMonthByDate(int month) {
         String errorMessage = "Жалоб и предложений за данный месяц не найдено";
         List<Feedback> dataByMonth = new ArrayList<>();
+
         for (Feedback feedback : data) {
             if (feedback.getDate().getMonth().getValue() == month) {
                 dataByMonth.add(feedback);
             }
         }
+
         if (dataByMonth.isEmpty()) {
             throw new FeedbackException(errorMessage);
         }

@@ -23,7 +23,7 @@ public class ReadingService<T extends BaseReading, V extends BaseReadingDto> {
         mapper = new ReadingMapper();
     }
 
-    public BaseReadingDto getActualData(User user) {
+    public BaseReadingDto getActualDataByUser(User user) {
         String errorMassage = "\nАктуальные показания для пользователя \"".concat(user.getLogin()).concat("\" отсутствуют\n");
         if (!userDataByMonthMap.containsKey(user)) {
             throw new ReadingException(errorMassage);
@@ -122,9 +122,9 @@ public class ReadingService<T extends BaseReading, V extends BaseReadingDto> {
 
         LocalDate localDate = reading.getDate();
         Integer month = localDate.getMonth().getValue();
-        Map<Integer, T> dataByMonth = new HashMap<>();
-        dataByMonth.put(month, reading);
-        userDataByMonthMap.put(user, dataByMonth);
+        Map<Integer, T> dataMonthMap = userDataByMonthMap.get(user) == null ? new HashMap<>() : userDataByMonthMap.get(user);
+        dataMonthMap.put(month, reading);
+        userDataByMonthMap.put(user, dataMonthMap);
     }
 
     private boolean checkToAdd(User user, LocalDate localDate) {
@@ -134,13 +134,6 @@ public class ReadingService<T extends BaseReading, V extends BaseReadingDto> {
 
         Map<Integer, T> monthDataMap = userDataByMonthMap.get(user);
         Integer month = localDate.getMonth().getValue();
-        T readingByCurrentMonth = monthDataMap.get(month);
-
-        if (readingByCurrentMonth == null) {
-            LocalDate lastLocalDate = monthDataMap.get(localDate.getMonth().minus(1).getValue()).getDate();
-            return lastLocalDate.plusMonths(1).isBefore(localDate);
-        } else {
-            return readingByCurrentMonth.getDate().plusMonths(1).isBefore(localDate);
-        }
+        return !monthDataMap.containsKey(month);
     }
 }

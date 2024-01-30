@@ -4,6 +4,7 @@ import lombok.*;
 
 @Getter
 @Setter
+@EqualsAndHashCode
 @AllArgsConstructor
 public class HeatingReadingDto extends BaseReadingDto {
 }

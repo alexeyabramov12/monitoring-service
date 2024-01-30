@@ -45,9 +45,9 @@ public class ReadingManagerService {
 
     public void actualReadingsByUser(User user) {
         List<BaseReadingDto> data = new ArrayList<>();
-        data.add(heatingReadingService.getActualData(user));
-        data.add(hotWaterReadingService.getActualData(user));
-        data.add(coldWaterReadingService.getActualData(user));
+        data.add(heatingReadingService.getActualDataByUser(user));
+        data.add(hotWaterReadingService.getActualDataByUser(user));
+        data.add(coldWaterReadingService.getActualDataByUser(user));
         outputHandler.displayActualReadingsByUser(user.getLogin(), data);
     }
 
