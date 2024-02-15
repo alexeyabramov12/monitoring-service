@@ -84,7 +84,7 @@ public class FeedbackServiceImplTest {
                 .map(mapper::feedbackDto)
                 .collect(Collectors.groupingBy(FeedbackDto::getDate)));
 
-        assertEquals(expect, feedbackService.getAllFeedbacksByMonthByDate(1));
+        assertEquals(expect, feedbackService.getAllFeedbacksByMonthByDate(dto1.getDate().getMonth().getValue()));
     }
 
     @Test
@@ -98,7 +98,7 @@ public class FeedbackServiceImplTest {
                 .map(mapper::feedbackDto)
                 .collect(Collectors.groupingBy(FeedbackDto::getDate)));
 
-        assertEquals(expect, feedbackService.getAllFeedbacksByMonthByDate(1));
+        assertEquals(expect, feedbackService.getAllFeedbacksByMonthByDate(dto1.getDate().getMonth().getValue()));
     }
 
     @Test
@@ -112,7 +112,7 @@ public class FeedbackServiceImplTest {
                 .map(mapper::feedbackDto)
                 .collect(Collectors.groupingBy(FeedbackDto::getDate)));
 
-        assertEquals(expect, feedbackService.getAllFeedbacksByMonthByDate(1));
+        assertEquals(expect, feedbackService.getAllFeedbacksByMonthByDate(dto1.getDate().getMonth().getValue()));
     }
 
     @Test

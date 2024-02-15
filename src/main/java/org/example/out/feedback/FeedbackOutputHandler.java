@@ -18,11 +18,11 @@ public class FeedbackOutputHandler extends OutputHandler {
     public void displayFeedbackMenu() {
         System.out.println("Для просмотра всех жалоб и предложений нажмите -> 1");
         System.out.println("Для просмотра всех жалоб и предложений за конкретный месяц нажмите -> 2");
-        System.out.println("Для выхода нвжмите -> 0");
+        System.out.println("Для выхода нажмите -> 0");
     }
 
-    public void displayAllFeedbacks(Map<LocalDate, List<FeedbackDto>> allFeedbacksByDate) {
-        System.out.println("История всех жалоб и предложений:");
+    public void displayAllFeedbacks(Map<LocalDate, List<FeedbackDto>> allFeedbacksByDate, String message) {
+        System.out.println(message);
         for (Map.Entry<LocalDate, List<FeedbackDto>> entry : allFeedbacksByDate.entrySet()) {
             LocalDate date = entry.getKey();
             System.out.println("Месяц: ".concat(date.getMonth().toString()).concat(" Дата: ").concat(date.toString()));
@@ -31,8 +31,8 @@ public class FeedbackOutputHandler extends OutputHandler {
     }
 
     public void displayAllFeedbacksByMonth(int month, Map<LocalDate, List<FeedbackDto>> allFeedbacksByMonthByDate) {
-        System.out.println("История показаний всех пользователей за месяц: ".concat(Month.of(month).toString()));
-        displayAllFeedbacks(allFeedbacksByMonthByDate);
+        String message = "История показаний всех пользователей за месяц: ".concat(Month.of(month).toString());
+        displayAllFeedbacks(allFeedbacksByMonthByDate, message);
     }
 
     private String getDataForDisplay(List<FeedbackDto> data) {
@@ -42,8 +42,9 @@ public class FeedbackOutputHandler extends OutputHandler {
             builder.append(dto.getUser());
             builder.append("\" \n\t\t\tТекст сообщения: ");
             builder.append(dto.getText());
+            builder.append("\n");
         }
-        return builder.toString();
+        return builder.toString().stripTrailing();
     }
 
 }

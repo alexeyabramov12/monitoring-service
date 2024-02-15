@@ -4,6 +4,7 @@ import org.example.dto.feedback.FeedbackDto;
 import org.example.exception.feedback.FeedbackException;
 import org.example.mapper.feedback.FeedbackMapper;
 import org.example.model.feedback.Feedback;
+import org.example.repository.feedback.FeedbackRepository;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -15,28 +16,28 @@ import java.util.stream.Collectors;
 public class FeedbackServiceImpl implements FeedbackService {
 
 
-    private final List<Feedback> data;
     private final FeedbackMapper mapper;
+    private final FeedbackRepository repository;
 
     public FeedbackServiceImpl() {
-        data = new ArrayList<>();
         mapper = new FeedbackMapper();
+        repository = new FeedbackRepository();
     }
 
     @Override
     public void addFeedback(FeedbackDto dto) {
-        data.add(mapper.DtoToFeedback(dto));
+        repository.add(mapper.DtoToFeedback(dto));
     }
 
     @Override
     public Map<LocalDate, List<FeedbackDto>> getAllFeedbacksByDate() {
         String errorMessage = "Жалоб и предложений не найдено";
 
-        if (data.isEmpty()) {
+        if (repository.empty()) {
             throw new FeedbackException(errorMessage);
         }
 
-        return new TreeMap<>(data.stream()
+        return new TreeMap<>(repository.getAll().stream()
                 .map(mapper::feedbackDto)
                 .collect(Collectors.groupingBy(FeedbackDto::getDate)));
     }
@@ -46,7 +47,7 @@ public class FeedbackServiceImpl implements FeedbackService {
         String errorMessage = "Жалоб и предложений за данный месяц не найдено";
         List<Feedback> dataByMonth = new ArrayList<>();
 
-        for (Feedback feedback : data) {
+        for (Feedback feedback : repository.getAll()) {
             if (feedback.getDate().getMonth().getValue() == month) {
                 dataByMonth.add(feedback);
             }

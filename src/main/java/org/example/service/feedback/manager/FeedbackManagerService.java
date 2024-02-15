@@ -41,7 +41,8 @@ public class FeedbackManagerService {
     }
 
     private void showAllFeedback() {
-        outputHandler.displayAllFeedbacks(feedbackService.getAllFeedbacksByDate());
+        String message = "История всех жалоб и предложений:";
+        outputHandler.displayAllFeedbacks(feedbackService.getAllFeedbacksByDate(), message);
     }
 
     private void showAllFeedbackByMonth() {

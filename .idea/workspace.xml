@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89c70726-7893-4cdb-9f59-3e18c00e6421" name="Changes" comment="add tests">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/AddingReading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Feedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MainMenuAdmin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MainMenuUser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/RegisterMenu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Registration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ShowAllFeadback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ShowAllReadings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ShowData.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/WrongAdding.png" afterDir="false" />
+    <list default="true" id="89c70726-7893-4cdb-9f59-3e18c00e6421" name="Changes" comment="add README.MD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +47,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "/Users/aleksej/IdeaProjects/Monitoring-Service/images",
+    "last_opened_file_path": "/Users/aleksej/Monitoring-Service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -186,7 +174,10 @@
       <workItem from="1706262002485" duration="1269000" />
       <workItem from="1706269153460" duration="15731000" />
       <workItem from="1706339614659" duration="27626000" />
-      <workItem from="1706441720981" duration="73772000" />
+      <workItem from="1706441720981" duration="74410000" />
+      <workItem from="1706638817393" duration="21000" />
+      <workItem from="1706671978383" duration="489000" />
+      <workItem from="1707980441664" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1706614136376</created>
@@ -202,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706633275810</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add README.MD">
+      <created>1706638153866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706638153866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +220,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
     <MESSAGE value="add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
+    <MESSAGE value="add README.MD" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.MD" />
   </component>
 </project>
